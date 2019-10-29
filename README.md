@@ -12,4 +12,4 @@ Private repo of team Golden Armada in THU Mechanics Design Competition
 
 新的更新日志请以类似的格式写在上面
 
-> We run things / things don't run we
+> We run things / things don't run us
