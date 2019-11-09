@@ -18,4 +18,4 @@ Private repo of team Golden Armada in THU Mechanics Design Competition
 
 ### test
 
-> 把前几周写的feedback模块框架传了上去，学习了如何fork和PR
+把前几周写的feedback模块框架传了上去，学习了如何fork和PR
