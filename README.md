@@ -2,6 +2,14 @@
 
 Private repo of team Golden Armada in THU Mechanics Design Competition
 
+## 20191117 14:40 - zjh：
+
+完善init cata（识别衣服类别，分成短袖、裤子、长袖）和init color（识别衣服主色，分成0~9十种颜色），这两个功能实现完了
+
+init pattern（识别花纹样式）战略性先放弃，目前没找到好的实现方式
+
+下一步是模块间的衔接，正在做
+
 ---
 
 ## 20191114 00:00 - zyc:
