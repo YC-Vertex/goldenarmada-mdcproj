@@ -36,10 +36,10 @@ def shot_and_get(json):
     request = [{
         'lib': 'DB',
         'func': 'InputClothes',
-        'param': {'category':cata_tag,\
-            'color':color_tag,\
-            'pattern':pattern_tag,\
-            'path':img_path}
+        'param': {'CTYP':cata_tag,\
+            'CCOLOR':color_tag,\
+            'CTEX':pattern_tag,\
+            'CIMG':img_path}
     }]
     json_request = json.dumps(request)
     retval = feedback.queryOutHandler(json_request)
