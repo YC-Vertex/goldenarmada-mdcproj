@@ -2,6 +2,20 @@
 
 Private repo of team Golden Armada in THU Mechanics Design Competition
 
+## 20191117 20:28 - zyy:
+- 对系统结构稍做更改：
+  - 将subcontroller重命名并归并入模块文件夹（controller调用更加方便）；
+  - 同时改变了文件之间的相互包含方式；
+- 添加了AI模块，包括功能
+  - 读取表情
+  - 注册
+  - 登陆
+- 添加了数据库模块
+  - 存衣服
+  - 取衣服
+  - 更新喜好
+  - 其中“更新喜好”的具体算法待定
+
 ## 20191117 15:36 - zjh：
 
 更新clocam.py，（试图）完成了这部分对DB的调用。如果成功的话应该能做到把路径+标签存进数据库
