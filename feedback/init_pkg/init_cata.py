@@ -1,3 +1,4 @@
+# pylint: disable=no-member
 import numpy as np
 import tensorflow as tf
 import keras

@@ -1,15 +1,16 @@
 # 上乘feedback，下接三个init函数
-import sys
-sys.path.append('../') # 不然没法import上层目录里的feedback.py
-from goldenarmada-mdcproj import feedback
 import json
 import cv2
 import numpy as np
+from time import sleep
+from picamera import PiCamera
+
 from init_pkg import init_pattern
 from init_pkg import init_cata
 from init_pkg import init_color
-from picamera import PiCamera
-from time import sleep
+
+if __name__ == '__main__':
+    import fb_subcontroller
 
 def shot_and_get(json):
     """
@@ -18,7 +19,7 @@ def shot_and_get(json):
     :param: ctr: the time this func has been called
     :return: none
     """
-    ctr = jason['param']
+    ctr = json['param']
     # 设置图片存储路径
     path_suffix = '.jpg'
     path_prefix = '/path/my_img'
@@ -42,5 +43,5 @@ def shot_and_get(json):
             'CIMG':img_path}
     }]
     json_request = json.dumps(request)
-    retval = feedback.queryOutHandler(json_request)
+    retval = fb_subcontroller.queryOutHandler(json_request)
     return retval

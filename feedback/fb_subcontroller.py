@@ -1,10 +1,13 @@
 # 上乘controller，下接preference和clocam
-import controller
-from feedback import clocam
-from feedback import preference
 import json
+import clocam
+import preference
+if __name__ == '__main__':
+    import sys
+    sys.path.append('../')
+    from goldenarmada_mdcproj import controller
 
-def queryInHandler(json):
+def QueryInHandler(json):
     if json['func'] == 'pre_update':
         result = preference.pre_update(json['param'])
         return result
@@ -12,8 +15,9 @@ def queryInHandler(json):
         result = clocam.shot_and_get(json['param'])
         return result
 
-def queryOutHandler(json):
+def QueryOutHandler(json):
     if json['lib'] == 'feedback':
-        return queryInHandler(json)
+        return QueryInHandler(json)
     else:
-        return controller.queryInHandler(json)
+        # return controller.queryInHandler(json)
+        return

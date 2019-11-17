@@ -1,7 +1,6 @@
-import sys
-sys.path.append('../') # 不然没法import上层目录里的feedback.py
-from myFeedback import feedback
 import json
+if __name__ == '__main__':
+    import fb_subcontroller
 
 def pre_update(json):
     """
@@ -18,6 +17,6 @@ def pre_update(json):
         'param': ''
     }]
     json_request = json.dumps(request)
-    emotion = feedback.queryOutHandler(json_request)
+    emotion = fb_subcontroller.queryOutHandler(json_request)
     update = emotion # 对emotion进行一通操作
     return update
