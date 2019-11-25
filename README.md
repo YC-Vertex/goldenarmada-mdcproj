@@ -2,6 +2,9 @@
 
 Private repo of team Golden Armada in THU Mechanics Design Competition
 
+## 20191125 12:36 - zjh：
+把模型文件放了上去，之前竟然忘了orz
+
 ## 20191117 20:28 - zyy:
 - 对系统结构稍做更改：
   - 将subcontroller重命名并归并入模块文件夹（controller调用更加方便）；
